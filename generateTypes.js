@@ -18,8 +18,10 @@ async function main() {
     .concat(breakerContracts)
     .concat(swapContracts);
   const allContractsPath = allContracts.map(contract => `${contract}/${contract.replace(".sol", ".json")}`);
+  const allContractsPath08 = allContracts.map(contract => `${contract}/${contract.replace(".sol", ".0.8.28.json")}`);
 
-  const allFiles = glob(`${cwd}/out`, allContractsPath);
+  const allFiles = glob(`${cwd}/out`, allContractsPath).concat(glob(`${cwd}/out`, allContractsPath08));
+
   await runTypeChain({
     cwd,
     filesToProcess: allFiles,
