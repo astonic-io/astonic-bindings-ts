@@ -3,13 +3,13 @@ const fs = require("fs");
 
 async function main() {
   const cwd = process.cwd();
-  const interfaces = fs.readdirSync(`${cwd}/lib/mento-core/contracts/interfaces`);
+  const interfaces = fs.readdirSync(`${cwd}/lib/astonic-core/contracts/interfaces`);
 
-  const governanceContracts = fs.readdirSync(`${cwd}/lib/mento-core/contracts/governance`);
-  const lockingContracts = fs.readdirSync(`${cwd}/lib/mento-core/contracts/governance/locking`);
-  const oracleContracts = fs.readdirSync(`${cwd}/lib/mento-core/contracts/oracles`);
-  const breakerContracts = fs.readdirSync(`${cwd}/lib/mento-core/contracts/oracles/breakers`);
-  const swapContracts = fs.readdirSync(`${cwd}/lib/mento-core/contracts/swap`);
+  const governanceContracts = fs.readdirSync(`${cwd}/lib/astonic-core/contracts/governance`);
+  const lockingContracts = fs.readdirSync(`${cwd}/lib/astonic-core/contracts/governance/locking`);
+  const oracleContracts = fs.readdirSync(`${cwd}/lib/astonic-core/contracts/oracles`);
+  const breakerContracts = fs.readdirSync(`${cwd}/lib/astonic-core/contracts/oracles/breakers`);
+  const swapContracts = fs.readdirSync(`${cwd}/lib/astonic-core/contracts/swap`);
 
   const allContracts = interfaces
     .concat(governanceContracts)

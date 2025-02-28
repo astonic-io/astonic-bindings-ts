@@ -8,25 +8,25 @@ The Mento protocol is a smart contract platform built on the Celo blockchain tha
 
 ## Documentation
 
-- [Protocol Documentation](https://docs.mento.org/mento-protocol/core/overview)
+- [Protocol Documentation](https://docs.mento.org/astonic-io/core/overview)
 - [Stability Whitepaper](https://celo.org/papers/stability)
 
 ## Getting Started
 
 ```bash
 # Get the latest code
-git clone git@github.com:mento-protocol/mento-core-ts.git
+git clone git@github.com:astonic-io/astonic-bindings-ts.git
 
 # Change directory to the the newly cloned repo
-cd mento-core-ts
+cd astonic-bindings-ts
 
 # Install dev dependencies with yarn
 yarn
 
-# Install mento-core submodule dependency with forge
+# Install astonic-core submodule dependency with forge
 forge install
 
-# Compile the mento-core dependency contracts with forge
+# Compile the astonic-core dependency contracts with forge
 forge build
 
 # Generate types

@@ -1,8 +1,9 @@
 [profile.default]
-src = "lib/mento-core/contracts"
+src = "lib/astonic-core/contracts"
 out = "out"
 test = "test"
 libs = ["lib"]
 auto_detect_solc = true
 legacy = true
 via_ir = true
+skip = ["import.sol"]

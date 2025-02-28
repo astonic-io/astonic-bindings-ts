@@ -1,2 +1,1 @@
-celo-foundry/=lib/celo-foundry/src/
-mento-core/=lib/mento-core/
+astonic-core/=lib/astonic-core/
