@@ -2,7 +2,7 @@
   "name": "@astonic-io/astonic-bindings-ts",
   "description": "Astonic type generation and npm package deployment repo",
   "license": "GPL-3.0-or-later",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "files": [
     "dist",
     "contracts",
